@@ -36,6 +36,11 @@ The system focuses on providing a smooth user experience with scalable backend a
 
 ---
 
+### Deployment
+-AWS 
+
+___
+
 ## ✨ Key Features
 
 - User registration and authentication

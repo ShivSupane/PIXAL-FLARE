@@ -53,20 +53,3 @@ ___
 
 ---
 
-## 📂 Project Structure
-PIXAL-FLARE/
-│
-├── backend/
-│ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ ├── config/
-│ └── server.js
-│
-├── frontend/ 
-│
-├── .env
-├── package.json
-└── README.md
-
-

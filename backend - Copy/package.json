@@ -1,18 +1,21 @@
 {
-  "name": "major-photography-project-main",
+  "name": "pixalflare-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "PixalFlare backend API",
+  "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
+    "start:prod": "NODE_ENV=production node src/server.js",
+    "dev": "nodemon --watch src --exec node src/server.js",
     "seed": "node src/utils/seedData.js -i",
     "seed:delete": "node src/utils/seedData.js -d",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "test": "echo \"No tests configured. Add tests with Jest or Mocha.\" && exit 0"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -20,13 +23,19 @@
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.0",
+    "compression": "^1.7.4",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.10.1",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
   }
 }

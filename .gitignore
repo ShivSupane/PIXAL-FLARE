@@ -1,0 +1,22 @@
+# Node modules and environment
+node_modules/
+.env
+dist/
+coverage/
+npm-debug.log
+.DS_Store
+.vscode/
+logs/
+*.log
+.idea/
+
+# Build outputs
+build/
+*.tgz
+
+# System files
+Thumbs.db
+
+# Optional: lock files if you prefer not tracking them
+# package-lock.json
+# yarn.lock
